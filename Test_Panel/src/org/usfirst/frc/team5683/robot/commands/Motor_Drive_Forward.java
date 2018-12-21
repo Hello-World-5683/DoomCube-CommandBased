@@ -1,5 +1,6 @@
 package org.usfirst.frc.team5683.robot.commands;
 
+import org.usfirst.frc.team5683.robot.OI;
 import org.usfirst.frc.team5683.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -25,7 +26,7 @@ public class Motor_Drive_Forward extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return OI.j.getX() == 0;
     }
 
     // Called once after isFinished returns true

@@ -43,7 +43,7 @@ public class OI {
 	// Start the command when the button is released and let it run the command
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
-	Joystick j = new Joystick(0);
+	public static Joystick j = new Joystick(0);
 	
 	Button b1 = new JoystickButton(j, 1);
 	Button b2 = new JoystickButton(j, 2);
